@@ -72,3 +72,26 @@ docker-compose -f docker-compose.middleware.yaml up -d
 ## Security Policies
 
 Both Python and JavaScript execution environments are strictly isolated (sandboxed) to ensure security. This means that developers cannot use functions that consume large amounts of system resources or may pose security risks, such as direct file system access, making network requests, or executing operating system-level commands. These limitations ensure the safe execution of the code while avoiding excessive consumption of system resources.
+
+### FAQ
+
+**Why can't I save the code it in the code node?**
+
+Please check if the code contains potentially dangerous behaviors. For example:
+
+```python
+def main() -> dict:
+    return {
+        "result": open("/etc/passwd").read(),
+    }
+```
+
+This code snippet has the following issues:
+
+* **Unauthorized file access:** The code attempts to read the "/etc/passwd" file, which is a critical system file in Unix/Linux systems that stores user account information.
+* **Sensitive information disclosure:** The "/etc/passwd" file contains important information about system users, such as usernames, user IDs, group IDs, home directory paths, etc. Direct access could lead to information leakage.
+
+Dangerous code will be automatically blocked by Cloudflare WAF. You can check if it's been blocked by looking at the "Network" tab in your browser's "Web Developer Tools".
+
+<figure><img src="broken-reference" alt=""><figcaption><p>Cloudflare WAF</p></figcaption></figure>
+

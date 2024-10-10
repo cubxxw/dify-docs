@@ -2,7 +2,7 @@
 
 ### 前提条件
 
-> Dify インストール前に, ぜひマシンが最小インストール要件を満たしていることを確認してください：
+> Dify インストール前に, マシンが最小インストール要件を満たしていることを確認してください：
 > - CPU >= 2 Core
 > - RAM >= 4 GiB
 
@@ -28,7 +28,7 @@ git clone https://github.com/langgenius/dify.git
     cd dify/docker
     ```
 
-2. 環境配置ファイルをコッピする
+2. 環境配置ファイルをコピーする
 
     ```bash
     cp .env.example .env
@@ -36,7 +36,7 @@ git clone https://github.com/langgenius/dify.git
 
 3. Docker コンテナを起動する
 
-    システムにインストールしたDocker Composeのバージョンをベースに，相応しい命令を使ってコンテナを起動します。你可以通过 `$ docker compose version`を通してdockerのバージョンをチェックできます，詳しくは [Docker ドキュメント](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)を参考してください：
+    システムにインストールしたDocker Composeのバージョンをベースに，相応しい命令を使ってコンテナを起動します。 `$ docker compose version`を通してdockerのバージョンをチェックできます，詳しくは [Docker ドキュメント](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)を参考してください：
 
     - Docker Compose V2を使用する場合，以下の命令を入力する：
   
@@ -137,4 +137,4 @@ docker compose down
 docker compose up -d
 ```
 
-すべでの環境変数セットは `docker/.env.example` にあります。
+すべての環境変数は `docker/.env.example` にあります。

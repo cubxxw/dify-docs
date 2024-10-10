@@ -23,10 +23,9 @@ Applications created in Dify support export in DSL format files, allowing you to
 
 ![](../../.gitbook/assets/export-dsl.png)
 
-The DSL file does not include the following sensitive information:
+The DSL file does not include authorization information already filled in [Tool](../workflow/node/tools.md) nodes, such as API keys for third-party services.&#x20;
 
-* Authorization information for third-party tools, such as API Keys.
-* If environment variables contain `Secret`, a prompt will appear during export asking whether to allow the export of sensitive information.
+If the environment variables contain variables of the `Secret` type, a prompt will appear during file export asking whether to allow the export of this sensitive information.
 
 ![](../../.gitbook/assets/export-dsl-secret.png)
 
