@@ -88,7 +88,7 @@ Difyは現在、複数のRerankモデルをサポートしており、"モデル
 
 以下は、複数の召回方法が知識ベース検索に与える影響を示します：
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-knowledge-base-table.png" alt=""><figcaption></figcaption></figure>
 
 3. **複数の知識ベースを引用する際、「重み設定」を調整できず、エラーが表示される場合はどう対処すれば良いですか？**
 

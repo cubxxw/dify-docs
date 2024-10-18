@@ -48,6 +48,7 @@
     * [参数提取](guides/workflow/node/parameter-extractor.md)
     * [HTTP 请求](guides/workflow/node/http-request.md)
     * [工具](guides/workflow/node/tools.md)
+  * [快捷键](guides/workflow/shortcut-key.md)
   * [编排节点](guides/workflow/orchestrate-node.md)
   * [预览与调试](guides/workflow/debug-and-preview/README.md)
     * [预览与运行](guides/workflow/debug-and-preview/yu-lan-yu-yun-hang.md)

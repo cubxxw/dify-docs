@@ -48,6 +48,7 @@
     * [Parameter Extraction](guides/workflow/node/parameter-extractor.md)
     * [HTTP Request](guides/workflow/node/http-request.md)
     * [Tools](guides/workflow/node/tools.md)
+  * [Shortcut Key](guides/workflow/shortcut-key.md)
   * [Orchestrate Node](guides/workflow/orchestrate-node.md)
   * [Debug and Preview](guides/workflow/debug-and-preview/README.md)
     * [Preview and Run](guides/workflow/debug-and-preview/yu-lan-yu-yun-hang.md)
